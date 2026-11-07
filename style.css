@@ -62,11 +62,11 @@ blockquote{font-size:20px}
   z-index:2;
   top:-7%;
   right:clamp(-46px,-3.4vw,-20px);
-  width:36%;
+  width:29%;
   height:auto;
   pointer-events:none;
 }
-.stamp text{fill:#080909;font:700 32px Arial,sans-serif}
+.stamp text{fill:#080909;font:700 28px Arial,sans-serif}
 .archive-image::before,.ski-photo::before{content:"";position:absolute;z-index:1;inset:15px -15px -15px 15px;border:1px solid color-mix(in srgb,var(--accent) 44%,transparent);pointer-events:none}
 .intro-photo img{height:auto;object-fit:contain;filter:grayscale(1) sepia(.16)}
 .intro-photo figcaption{display:flex;justify-content:space-between;gap:12px;margin-top:28px;font:11px/1.6 var(--mono);letter-spacing:.05em;color:var(--text)}

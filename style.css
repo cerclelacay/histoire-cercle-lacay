@@ -31,11 +31,12 @@ blockquote{font-size:20px}
 .emblem-row p span,.logo-card span,.present-stat span{font-size:11px}
 .present-photo{height:auto;aspect-ratio:4/3;max-width:1060px;margin-inline:auto}
 .present-photo img{height:100%;object-fit:contain}
-.ski-story{max-width:1100px;margin:86px auto 0;display:grid;grid-template-columns:1.08fr .92fr;gap:8vw;align-items:center}
-.ski-photo{margin:0;aspect-ratio:1440/1131;overflow:hidden;position:relative}
+.ski-story{max-width:1100px;margin:86px auto 0;display:grid;grid-template-columns:1.08fr .92fr;grid-template-areas:"photo copy";gap:8vw;align-items:center}
+.ski-photo{grid-area:photo;margin:0;aspect-ratio:1440/1131;overflow:hidden;position:relative}
 .ski-photo img{height:100%;object-fit:contain;background:var(--paper2)}
 .ski-photo figcaption{position:absolute;bottom:0;left:0;right:0;padding:38px 16px 13px;display:flex;justify-content:space-between;gap:10px;background:linear-gradient(transparent,#0009);color:#fff;font:11px var(--mono)}
 .ski-photo figcaption span{font-size:10px;text-align:right}
+.ski-copy{grid-area:copy}
 .ski-copy h3{font:500 clamp(1.9rem,3.2vw,2.8rem)/1.1 var(--serif);letter-spacing:-.03em;margin:0 0 22px}
 .ski-copy p:not(.overline){font-size:18px;line-height:1.85;color:var(--text)}
 .ski-copy .overline{font-size:11px}
@@ -43,7 +44,7 @@ blockquote{font-size:20px}
  .hero-lede,.intro-content>p:not(.overline),.chapter-copy>p:not(.overline),.interlude-heading>p:last-child,.turning-copy>p:not(.overline),.present-intro>p:last-child,.new-dojo-copy>p,.present-bottom>p,.move-head>p:last-child,.milestone p,.ski-copy p:not(.overline){font-size:16px}
  .eyebrow,.top-link,.discover,.section-kicker,.overline,.hero-photo figcaption,.chapter-image figcaption,.turning-photo figcaption,.present-photo figcaption,.new-dojo figure figcaption,.wide-photo figcaption,.year-marker,.closing-note,.closing-signature,.hero-side-note,.hero-year,.big-year span{font-size:10px}
  .hero-photo figcaption span,.chapter-image figcaption span,.turning-photo figcaption span,.present-photo figcaption span,.new-dojo figure figcaption span,.ski-photo figcaption span{font-size:9px}
- .ski-story{grid-template-columns:1fr;gap:32px;margin-top:62px}
+ .ski-story{grid-template-columns:1fr;grid-template-areas:"copy" "photo";gap:32px;margin-top:62px}
  .ski-copy h3{font-size:30px}
 }
 @media(max-width:480px){
